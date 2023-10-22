@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./src/style.css">
+    <title>Table Generator</title>
+</head>
+<body>
+    <h1>Table Generator</h1>
+    <p>Wähle aus, wie viele Spalten und Zeilen du möchtest und betätige den Button.</p>
+     <label>Spalten-Anzahl:</label> <!-- Die Spaltenanzahl wird über die ID abgefragt. -->
+    <input type="number" id="spalte" name="Spalteninput" placeholder="Spalteninput" min="1" max="999999" step="1" value="1">
+    <label>Zeilen-Anzahl:</label> <!-- Die Zeilenanzahl wird über die ID abgefragt. -->
+    <input type="number" id="zeile" name="Zeileninput" placeholder="Spalteninput" min="1" max="999999" step="1" value="1">
+    <input type="button" class="button" id="button" value="✓"> <!-- Der Button wird über einen EventListener getriggert. -->
+    <div class="container"> <!-- Die Tabelle wird in einer Div-Gruppe mit einem Tabel Tag mit der ID "table" erstellt. -->
+        <table id="table">
+
+        </table>
+    </div>
+    <script src="./src/script.js"></script>
+</body>
+</html>
