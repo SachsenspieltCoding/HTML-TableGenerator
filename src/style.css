@@ -1,111 +1,121 @@
 .container {
-    display: flex; /* Flexbox verwenden */
-  }
+	display: flex; /* Flexbox verwenden */
+}
 
 .button {
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
 }
 
 /* Stil für die Tabelle */
 table {
-    width: 90%; /* 90% der Fensterbreite */
-    margin: 0 auto; /* Zentriert die Tabelle horizontal im Fenster */
-    border-collapse: collapse; /* Zusammenführen der Tabellenzellenränder */
-    background-color: #333;
+	width: 90%; /* 90% der Fensterbreite */
+	margin: 0 auto; /* Zentriert die Tabelle horizontal im Fenster */
+	border-collapse: collapse; /* Zusammenführen der Tabellenzellenränder */
+	background-color: #333;
 }
 
 /* Stil für die Tabellenzellen (optional) */
-table, th, td {
-    border: 1px solid black; /* Fügt Rahmen um die Zellen hinzu */
-    padding: 8px; /* Innenabstand der Zellen */
-    text-align: left; /* Linksbündige Ausrichtung des Textes in den Zellen */
+table,
+th,
+td {
+	border: 1px solid black; /* Fügt Rahmen um die Zellen hinzu */
+	padding: 8px; /* Innenabstand der Zellen */
+	text-align: left; /* Linksbündige Ausrichtung des Textes in den Zellen */
 }
 
-
 p {
-font-size: 1vw; /* Die Schriftgröße wird in Prozent der Viewport-Breite festgelegt */
-padding: 1vw; /* Der Innenabstand wird ebenfalls in Prozent der Viewport-Breite festgelegt */
+	font-size: 1vw; /* Die Schriftgröße wird in Prozent der Viewport-Breite festgelegt */
+	padding: 1vw; /* Der Innenabstand wird ebenfalls in Prozent der Viewport-Breite festgelegt */
 }
 
 /* Hintergrundfarbe */
 body {
-    background-color: #000;
-    color: #fff; /* Textfarbe */
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Header-Styling */
-  header {
-    background-color: #222; /* Dunkles Grau für Header */
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #3db1ff; 
-    font-size: 36px;
-    position: relative;
-    margin-top: 20px; /* Ändere den Abstand oben */
-    margin-bottom:5px; /* Ändere den Abstand unten */
-    margin-left: 3%; /* Setze den linken Rand auf automatisch (zentrieren horizontal) */
-    margin-right: auto; /* Setze den rechten Rand auf automatisch (zentrieren horizontal) */
-    text-align: center;
-  }
+	background-color: #000;
+	color: #fff; /* Textfarbe */
+	font-family: Arial, sans-serif;
+}
 
-  /* Navigationsmenü */
+/* Header-Styling */
+header {
+	background-color: #222; /* Dunkles Grau für Header */
+	padding: 20px;
+	text-align: center;
+}
+
+h1,
+h2 {
+	color: #3db1ff;
+	font-size: 36px;
+	position: relative;
+	margin-top: 20px; /* Ändere den Abstand oben */
+	margin-bottom: 5px; /* Ändere den Abstand unten */
+	margin-left: 3%; /* Setze den linken Rand auf automatisch (zentrieren horizontal) */
+	margin-right: auto; /* Setze den rechten Rand auf automatisch (zentrieren horizontal) */
+	text-align: center;
+}
+
+h2 {
+	margin-top: 0;
+	font-size: 24px;
+}
+
+h2 > a {
+	color: #3db1ff;
+}
+
+/* Navigationsmenü */
 nav {
-    background-color: #333; /* Dunkles Grau für Navigationsmenü */
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: #fff; /* Weiße Textfarbe für Links im Navigationsmenü */
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  /* Abschnittsstyling */
-  section {
-    padding: 40px;
-  }
-  
-  /* Fußzeile */
-  footer {
-    background-color: #222;
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-  }
-  
-  /* Buttons */
-  .button {
-    background-color: #3498db; /* Dunkelblaue Hervorhebungsfarbe */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #2980b9; /* Dunklere Blaufärbung beim Überfahren */
-  }
-  
+	background-color: #333; /* Dunkles Grau für Navigationsmenü */
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff; /* Weiße Textfarbe für Links im Navigationsmenü */
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Abschnittsstyling */
+section {
+	padding: 40px;
+}
+
+/* Fußzeile */
+footer {
+	background-color: #222;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+}
+
+/* Buttons */
+.button {
+	background-color: #3498db; /* Dunkelblaue Hervorhebungsfarbe */
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #2980b9; /* Dunklere Blaufärbung beim Überfahren */
+}
